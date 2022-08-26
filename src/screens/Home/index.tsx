@@ -5,7 +5,7 @@ import { calculate } from "../../utils/calculator";
 import styles from "./styles.module.css";
 
 const Home = () => {
-  const [result, setResult] = useState<number | null>(0);
+  const [result, setResult] = useState<number | null>(null);
   const [equation, setEquation] = useState<string>("");
 
   const onCharAdd = (string: string) => setEquation(equation + string);
