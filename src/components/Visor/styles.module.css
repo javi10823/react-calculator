@@ -1,0 +1,53 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.result,
+.equationUnsolved {
+  font-size: 88px;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.result, .equation, .equationUnsolved {
+    word-break: bread-all;
+    text-align: right;
+}
+
+.result {
+  animation-name: on-result-res;
+  animation-duration: 1s;
+}
+
+.equation {
+  color: var(--color-terciary);
+}
+
+.equation {
+  animation-name: on-result-eq;
+  animation-duration: 1s;
+  font-size: 24px;
+}
+
+@keyframes on-result-eq {
+  0% {
+    font-size: 88px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
+@keyframes on-result-res {
+  0% {
+    color: #ffffff00;
+  }
+  100% {
+    color: #ffffffff;
+  }
+}
